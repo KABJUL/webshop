@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const products = [
@@ -42,7 +43,11 @@ export default function Home() {
               height={200}
             />
 
-            <h2>{product.name}</h2>
+            <Link href={`/product/${product.id}`}>
+              <h2 style={{ cursor: "pointer", color: "blue" }}>
+                {product.name}
+              </h2>
+            </Link>
 
             <p>{product.price} EUR</p>
 
