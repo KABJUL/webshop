@@ -142,14 +142,14 @@ export default function CartPage() {
               Shipping costs and payment will be handled at checkout.
             </p>
 
-            <button
-              type="button"
-              disabled
-              className="mt-6 w-full cursor-not-allowed bg-gray-200 px-5 py-4 font-bold text-gray-500"
-              title="Checkout is not implemented yet"
-            >
-              Checkout — coming soon
-            </button>
+            
+<Link
+  href="/checkout"
+  className="mt-6 block w-full bg-[#f5a623] px-5 py-4 text-center font-bold text-black transition-colors hover:bg-[#e89512]"
+>
+  Proceed to checkout
+</Link>
+
           </aside>
         </div>
       )}
